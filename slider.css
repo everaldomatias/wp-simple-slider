@@ -1,0 +1,67 @@
+/* Slider */
+
+/* Índice
+-----------------------------------------------
+1. Global
+2. CarouFredSel
+3. Slider
+
+*/
+
+/* 1. Global
+----------------------------------------------- */
+.clear {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* 2. CarouFredSel
+----------------------------------------------- */
+.caroufredsel_wrapper {
+  height: 100%;
+  padding-top: 1px;
+  width: 100%;
+}
+
+.caroufredsel_wrapper ul, .caroufredsel_wrapper ul li {
+  list-style: none;
+  padding: 0;
+}
+
+.caroufredsel_wrapper ul li {
+  border: 1px solid #BBB;
+  border-radius: 10px;
+  float: left;
+  height: 350px;
+  overflow: hidden;
+}
+
+.caroufredsel_wrapper ul li img {
+  max-width: 100%;
+}
+
+/* 3. Slider
+----------------------------------------------- */
+.slider {
+  position: relative;
+}
+
+.slider .prev, .slider .next {
+  cursor: pointer;
+  height: 70px;
+  position: absolute;
+  top: 140px;
+  width: 50px;
+  z-index: 9;
+}
+
+.slider .prev {
+  background: url('images/prev.png') center center no-repeat transparent;
+}
+
+.slider .next {
+  background: url('images/next.png') center center no-repeat transparent;
+  right: 0;
+}
